@@ -17,27 +17,36 @@
         android:textStyle="bold"
         android:text="@string/titol"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/subtitol"
-        android:layout_below="@id/titol"
-        android:padding="@dimen/padding_regular"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
-        android:text="@string/subtitol"/>
+
 
     <ScrollView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/subtitol">
-        <TextView
+        android:layout_below="@id/titol">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/article"
-            android:autoLink="web"
-            android:lineSpacingExtra="5sp"
-            android:padding="@dimen/padding_regular"
-            android:text="@string/text_article" />
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/subtitol"
+                android:layout_below="@id/titol"
+                android:padding="@dimen/padding_regular"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                android:text="@string/subtitol"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/article"
+                android:autoLink="web"
+                android:lineSpacingExtra="5sp"
+                android:padding="@dimen/padding_regular"
+                android:text="@string/text_article" />
+        </LinearLayout>
     </ScrollView>
 
 </RelativeLayout>
